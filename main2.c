@@ -2,7 +2,7 @@
 
 void main()
 {
-    int A,sum=0,i=0;
+    int A,sum=12,i=0;
 
     printf("Enter a number A\n");
     scanf("%d",&A);
@@ -10,9 +10,9 @@ void main()
 
     while(sum < A)
     {
-        sum += (12+i*20);
-        i++;
         printf("Sum = %d\n",sum);
+        i++;
+        sum += (i*20);
     }
         printf("Sum = %d\nN = %d\n",sum,(i*20)+10);
 }
