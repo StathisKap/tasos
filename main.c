@@ -2,7 +2,7 @@
 
 void main()
 {
-    float Grade = 0, Total=0;
+    float Grade = 0, Total=0,Max=0,Min=10;
     int number=0;
 
     while(1)
@@ -13,10 +13,19 @@ void main()
         {
             number++;
             Total += Grade;
-            printf("\n %.2f %.2f %d\n",Grade,Total,number);
+            if (Grade > Max)
+            {
+               Max = Grade; 
+            }
+            else if (Grade < Min)
+            {
+               Min = Grade; 
+            }
+            
+            
         }
         else
             break; 
     }
-    printf("The average is %.2f",Total/number);
+    printf("The average is %.2f\nThe Max is %.2f\nThe Min is %.2f",Total/number,Max,Min);
 }
