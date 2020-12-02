@@ -6,19 +6,19 @@
 
 void reverse(int array[ROWS][COLS]) //Reverse Function
 {
-    int temp = array[ROWS-1][COLS-1]; 
-    for (int i = ROWS; i>0;i--)
-        for (int j = COLS; j>0;j--)
+    int temp = array[ROWS-1][COLS-1], i, j;
+    for (i = ROWS-1; i>0;i--)
+        for (j = COLS-1; j>0;j--)
             array[i][j] = array[i-1][j-1];
     array[0][0]=temp;
 }
 
 int main()
 {
-    int array[ROWS][COLS];
-    for(int i = 0;i<5;i++)
+    int array[ROWS][COLS],i,j;
+    for(i = 0;i<5;i++)
     {
-        for(int j=0; j<5 ; j++)
+        for(j=0; j<5 ; j++)
         {
             if(i==j)
             {
@@ -35,11 +35,12 @@ int main()
         }
     }
 
+    
     reverse(array);
 
-    for(int i=0; i<5;i++)
+    for(i=0; i<5;i++)
     {
-        for(int j = 0;j<5;j++)
+        for(j = 0;j<5;j++)
         {
             printf("%d  ",array[i][j]);
         }
