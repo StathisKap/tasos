@@ -1,0 +1,7 @@
+Ergasia 1
+
+make a second string
+allocate memory that's the size of the first string dynamically (malloc)
+copy each character to the second string, unless it's a space AND on the first position
+if the character is equal to the one given, then change it to the second one
+if the last character is a space, then change it to '\0'
