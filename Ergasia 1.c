@@ -30,6 +30,12 @@ char *ReplaceChar(char *istring, char initial, char final)
 int main()
 {
     char string[] = " Ti kako ekane o Epstein EEh? Malakes\n";
-    printf("%s",ReplaceChar(string,'i', 'o'));
+    char initial, final;
+    printf("Enter the letter to be replaced:\n");
+    scanf("\n%c",&initial);
+    printf("Enter the letter to replace it with:\n");
+    scanf("\n%c",&final);
+
+    printf("%s",ReplaceChar(string,initial, final));
     return 0;
 }
