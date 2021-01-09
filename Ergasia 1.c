@@ -15,8 +15,8 @@ char *ReplaceChar(char *istring, char initial, char final)
                istring++, *fstring = *istring;
             else if (*istring == initial)
                 *fstring = final;
-            else if(*istring == ' ' && *istring+1 == ' ' ) 
-		istring++;	
+            else if(*istring == ' ' && *(istring+1) == ' ' ) 
+            fstring--;
             else 
                 *fstring = *istring;
                 istring++,fstring++;
@@ -31,7 +31,7 @@ char *ReplaceChar(char *istring, char initial, char final)
 
 int main()
 {
-    char string[] = " Ti kako ekane o Epstein EEh? Malakes\n";
+    char string[] = " 9/11 was an inside job and the US    government is hiding   aliens in Area  51!! \n";
     char initial, final;
     printf("Enter the letter to be replaced:\n");
     scanf("\n%c",&initial);
