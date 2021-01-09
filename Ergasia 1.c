@@ -15,6 +15,8 @@ char *ReplaceChar(char *istring, char initial, char final)
                istring++, *fstring = *istring;
             else if (*istring == initial)
                 *fstring = final;
+            else if(*istring == ' ' && *istring+1 == ' ' ) 
+		istring++;	
             else 
                 *fstring = *istring;
                 istring++,fstring++;
