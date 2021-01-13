@@ -58,7 +58,7 @@ void Read_Data(struct polites *Data,int num_of_entries)
         int avg = (Data[i].vat1 + Data[i].vat2 + Data[i].vat3)/3;
         if(avg >filter)
         {
-       printf("Last Name:%s\nSale 1:%f€\nSale 2:%f€\nSale 3:%f€\n\n",Data[i].eponymo,Data[i].vat1,Data[i].vat2,Data[i].vat3);
+       printf("\nLast Name:%s\nSale 1:%.0f€\nSale 2:%.0f€\nSale 3:%.0f€\n",Data[i].eponymo,Data[i].vat1,Data[i].vat2,Data[i].vat3);
         }
     }
 
